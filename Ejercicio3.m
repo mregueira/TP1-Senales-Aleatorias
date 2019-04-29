@@ -32,11 +32,11 @@ for k=1:N
 end
 
 % Media en t = 4
-mean_Q4 = mean(Qb(4,:))
+mean_Q4 = mean(Qb(4,:));
 % Varianza en t = 7
-var_Q7 = var(Qb(7,:))
+var_Q7 = var(Qb(7,:));
 % Rxx(5,8)
-Rxx5_8 = R(Qb,5,8)
+Rxx5_8 = R(Qb,5,8);
 % rxx(2,3)
-rxx2_3 = C(Qb,2,3)/(sqrt(C(Qb,2,2).*C(Qb,3,3)))
+rxx2_3 = C(Qb,2,3)/(sqrt(C(Qb,2,2).*C(Qb,3,3)));
 
