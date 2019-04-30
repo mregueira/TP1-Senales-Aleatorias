@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2018.4.3)  28 APR 2019 22:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2018.4.3)  30 APR 2019 18:10
 entering extended mode
 **./Informe.tex
 (Informe.tex
@@ -997,30 +997,122 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 2.
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 3.
+
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmlfutmi.fd"
+File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 3.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 3.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 3.
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write3
 \openout3 = `Informe.toc'.
 
  [1{C:/Users/Marcelo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-] [2] (Informe.aux
+]
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 53.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 11.03998pt on input line 53.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 53.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 53.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 11.03998pt on input line 53.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 53.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 53.
+
+<Imagenes/X1_1000.png, id=9, 421.575pt x 316.18124pt>
+File: Imagenes/X1_1000.png Graphic file (type png)
+
+<use Imagenes/X1_1000.png>
+Package pdftex.def Info: Imagenes/X1_1000.png used on input line 59.
+(pdftex.def)             Requested size: 231.86696pt x 173.9002pt.
+
+<Imagenes/X2_5000.png, id=10, 421.575pt x 316.18124pt>
+File: Imagenes/X2_5000.png Graphic file (type png)
+
+<use Imagenes/X2_5000.png>
+Package pdftex.def Info: Imagenes/X2_5000.png used on input line 60.
+(pdftex.def)             Requested size: 231.86696pt x 173.9002pt.
+ [2 <./Imagenes/X1_1000.png (PNG copy)> <./Imagenes/X2_5000.png (PNG copy)>]
+<Imagenes/X3_50000.png, id=17, 421.575pt x 316.18124pt>
+File: Imagenes/X3_50000.png Graphic file (type png)
+
+<use Imagenes/X3_50000.png>
+Package pdftex.def Info: Imagenes/X3_50000.png used on input line 70.
+(pdftex.def)             Requested size: 231.86696pt x 173.9002pt.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(Codigos/ItemAB.m
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 1.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 1.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 1.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 1.
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 18.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\ts1futs.fd"
+File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
+) [3 <./Imagenes/X3_50000.png (PNG copy)>]) (Codigos/ItemD.m) [4]
+<Imagenes/MediasX.png, id=24, 421.575pt x 316.18124pt>
+File: Imagenes/MediasX.png Graphic file (type png)
+
+<use Imagenes/MediasX.png>
+Package pdftex.def Info: Imagenes/MediasX.png used on input line 121.
+(pdftex.def)             Requested size: 231.86696pt x 173.9002pt.
+ [5 <./Imagenes/MediasX.png (PNG copy)>]
+(Codigos/ItemE.m) [6] (Informe.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 6390 strings out of 493333
- 85229 string characters out of 3136603
- 155998 words of memory out of 3000000
- 9789 multiletter control sequences out of 15000+200000
- 22334 words of font info for 25 fonts, out of 3000000 for 9000
+ 7478 strings out of 493333
+ 97359 string characters out of 3136603
+ 317943 words of memory out of 3000000
+ 10799 multiletter control sequences out of 15000+200000
+ 96782 words of font info for 126 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,11n,43p,235b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,12n,43p,365b,2301s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb>
-Output written on Informe.pdf (2 pages, 29694 bytes).
+iles (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on Informe.pdf (6 pages, 646240 bytes).
 PDF statistics:
- 18 PDF objects out of 1000 (max. 8388607)
+ 54 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
