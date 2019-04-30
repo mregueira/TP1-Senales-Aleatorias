@@ -1,36 +1,36 @@
 %% [3] Proceso aleatorio de Poisson
 clear Workspace;
 clc;
-N = 1000;
+N = 10000; % Cantidad de funciones muestra
+T = 1000; % Longitud de tiempo
 %% Item A
-Qa = zeros(N,1);
-for i=2:N
-   x = rand;
-   y = (0.2).*log(1/(1-x));
-   if (y > 1)
-       Qa(i) = Qa(i-1) + 1;
-   else
-       Qa(i) = Qa(i-1);
-   end
-end
+% Qa = zeros(N,1);
+% for i=2:N
+%    x = rand;
+%    y = (0.2).*log(1/(1-x));
+%    if (y > 1)
+%        Qa(i) = Qa(i-1) + 1;
+%    else
+%        Qa(i) = Qa(i-1);
+%    end
+% end
 % z = 1:1:N;
 % plot(z,Q);
 
 %% Item B
 
-Qb = zeros(10,N);
-for k=1:N
-    for i=2:10
+Qb = zeros(T,N);
+for i=1:N
+   for j=2:T
        x = rand;
        y = (2).*log(1/(1-x));
-       if (y > 1)
-           Qb(i,k) = Qb(i-1,k) + 1;
+       if (y > 0.75)
+           Qb(j,i) = Qb(j-1,i) + 1;
        else
-           Qb(i,k) = Qb(i-1,k);
+           Qb(j,i) = Qb(j-1,i);
        end
-    end
+   end
 end
-
 % Media en t = 4
 mean_Q4 = mean(Qb(4,:));
 % Varianza en t = 7
