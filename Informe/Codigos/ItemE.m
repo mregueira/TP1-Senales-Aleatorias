@@ -1,3 +1,7 @@
+%% Valores de media y varianza personalizados
+mu_x = 3;
+var_x = 1;
+
 %% Item E
 % mx representa el promedio de la suma de N variables aleatorias
 % Media: mu_x - Desviacion: sigma_x/sqrt(N)

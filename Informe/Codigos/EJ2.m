@@ -2,7 +2,7 @@
 clear Workspace;
 clc;
 
-% Generación de uniformes [0 , 1]
+% Generacion de uniformes [0 , 1]
 N = 5000;
 X1 = rand(N,1); 
 X2 = rand(N,1);

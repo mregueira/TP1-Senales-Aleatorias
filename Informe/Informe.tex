@@ -186,7 +186,70 @@ El c\'odigo utilizado para verificar por simulaci\'on es el siguiente:
 
 Donde la probabilidad P calculada efectivamente resulta $\leq 0.02$.
 
+\newpage
+
 \section{Variables aleatorias conjuntamente gaussianas}
+
+En este caso se analizan dos variables aleatorias conjuntamente gaussianas, cuyos par\'ametros son:
+
+\begin{table}[ht]
+\begin{centering}
+\begin{tabular}{|c||c|c|c|c|c|}
+\hline 
+Caso & $\mu_x$ & $\mu_y$ & $\sigma_x$ & $\sigma_y$ & $\rho$\\
+\hline 
+\hline 
+A & 2 & 3 & 1 & 1 & -0.5\tabularnewline
+\hline 
+B & 2 & 3 & 1 & 0.5 & -0.8\tabularnewline
+\hline 
+\end{tabular}
+\par\end{centering}
+\caption{Par\'ametros para los casos analizados}
+
+\end{table}
+
+Las variables $X_n$ con distribuci\'on normal est\'andar son generadas utilizando el m\'etodo de simulaci\'on de montecarlo (mediando dos variables aleatorias con distribuci\'on uniforme al igual que antes), y mediante la transformaci\'on lineal siguiente se halla la variable $X$:
+
+\[
+X = \sigma_x X_n + \mu_x
+\]
+
+An\'alogamente se halla la variable $Y$:
+
+\[
+Y = \sigma_y Y_n + \mu_y
+\]
+
+Para dibujar la nube de puntos con ambas variables se tiene la funci\'on de densidad de probabilidad gaussiana bivariable:
+
+\[
+f_{XY}(x,y) = \frac{1}{2 \pi \sigma_x \sigma_y \sqrt{1-\rho^2}} e^{- \frac{1}{2 \left(1-\rho^2\right)} \left[ \left( \frac{x-\mu_x}{\sigma_x} \right)^2 + \left( \frac{y-\mu_y}{\sigma_y} \right)^2 - \frac{2 \rho (x-\mu_x) (y-\mu_y)}{\sigma_x \sigma_y} \right]}
+\]
+
+Teniendo los elementos anteriores, se implementa el siguiente c\'odigo en MatLab para obtener los gr\'aficos resultantes.
+
+\lstinputlisting[language=Matlab, caption=C\'odigo de implementaci\'on]{Codigos/EJ2.m}
+
+Los resultados obtenidos para ambos casos se muestran a continuaci\'on.
+
+\begin{figure}[!ht]
+\begin{centering}
+\includegraphics[scale=0.55]{Imagenes/Za.png}
+\includegraphics[scale=0.55]{Imagenes/Zb.png}
+\par\end{centering}
+\caption{Nube de puntos resultante para ambos casos}
+
+\end{figure} 
+
+Para el caso A, se tiene que $\sigma_x = \sigma_y$, por lo que si se realizan las curvas de nivel se observar\'ian c\'irculos, donde la orientaci\'on de sus ejes est\'a dada por el coeficiente de correlaci\'on $\rho$. En el caso B, se tiene $\sigma_x \neq \sigma_y$, por lo que las curvas de nivel resultantes son elipses. El $|\rho|$ es mayor que en el caso anterior, por lo que la orientaci\'on de sus ejes resulta distinta. Se observa que a medida que el $|\rho| \longrightarrow 1$, las elipses se van 'estirando', hasta que en el l\'imite tiende a una recta.\par
+En dicho l\'imite, se tiene una relaci\'on directamente lineal entre $X$ e $Y$, por lo que conociendo cu\'anto vale uno ya se conoce el otro, mediante:
+
+\[
+y = \frac{\sigma_y}{\sigma_x}x + \mu_y - \frac{\sigma_y}{\sigma_x} \mu_x
+\] 
+
+\newpage
 
 \section{Proceso de Poisson}
 

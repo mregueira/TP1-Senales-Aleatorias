@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2018.4.3)  30 APR 2019 18:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2018.4.3)  30 APR 2019 21:15
 entering extended mode
 **./Informe.tex
 (Informe.tex
@@ -1090,18 +1090,32 @@ File: Imagenes/MediasX.png Graphic file (type png)
 Package pdftex.def Info: Imagenes/MediasX.png used on input line 121.
 (pdftex.def)             Requested size: 231.86696pt x 173.9002pt.
  [5 <./Imagenes/MediasX.png (PNG copy)>]
-(Codigos/ItemE.m) [6] (Informe.aux
+(Codigos/ItemE.m) [6] (Codigos/EJ2.m [7])
+<Imagenes/Za.png, id=35, 421.575pt x 316.18124pt>
+File: Imagenes/Za.png Graphic file (type png)
+ <use Imagenes/Za.png>
+Package pdftex.def Info: Imagenes/Za.png used on input line 238.
+(pdftex.def)             Requested size: 231.86696pt x 173.9002pt.
+
+<Imagenes/Zb.png, id=36, 421.575pt x 316.18124pt>
+File: Imagenes/Zb.png Graphic file (type png)
+ <use Imagenes/Zb.png>
+Package pdftex.def Info: Imagenes/Zb.png used on input line 239.
+(pdftex.def)             Requested size: 231.86696pt x 173.9002pt.
+
+[8 <./Imagenes/Za.png (PNG copy)> <./Imagenes/Zb.png (PNG copy)>] [9]
+(Informe.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 7478 strings out of 493333
- 97359 string characters out of 3136603
+ 7517 strings out of 493333
+ 97794 string characters out of 3136603
  317943 words of memory out of 3000000
- 10799 multiletter control sequences out of 15000+200000
- 96782 words of font info for 126 fonts, out of 3000000 for 9000
+ 10831 multiletter control sequences out of 15000+200000
+ 97199 words of font info for 128 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,12n,43p,365b,2301s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,12n,43p,601b,2301s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pfb><C:/Program File
@@ -1110,9 +1124,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Program Files
 (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x86)/Mi
 KTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on Informe.pdf (6 pages, 646240 bytes).
+Output written on Informe.pdf (9 pages, 1395390 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
+ 67 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
