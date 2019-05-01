@@ -6,3 +6,5 @@
 \contentsline {subsection}{\numberline {1.4}Error en la estimaci\'on de $\mu _x$ - Ejemplo}{5}
 \contentsline {section}{\numberline {2}Variables aleatorias conjuntamente gaussianas}{7}
 \contentsline {section}{\numberline {3}Proceso de Poisson}{9}
+\contentsline {subsection}{\numberline {3.1}C\'alculo de par\'ametros espec\'ificos}{10}
+\contentsline {subsection}{\numberline {3.2}Estimaci\'on de par\'ametros por promedio temporal}{11}

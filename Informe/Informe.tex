@@ -253,4 +253,110 @@ y = \frac{\sigma_y}{\sigma_x}x + \mu_y - \frac{\sigma_y}{\sigma_x} \mu_x
 
 \section{Proceso de Poisson}
 
+El proceso aleatorio asignado en este caso es el proceso de Poisson. Se utiliza un contador $Q(t)$, que indica el n\'umero de eventos ocurridos hasta el tiempo $t$.\par
+El c\'odigo utilizado para generar las funciones muestra se detalla a continuaci\'on. Se ajust\'o de manera tal que la media $\lambda t$ tenga $\lambda \approx 1$.
+
+\lstinputlisting[language=Matlab, caption=C\'odigo de implementaci\'on]{Codigos/EJ3A.m}
+
+En lo que sigue se plasman algunas funciones muestra generadas.
+
+\begin{figure}[!ht]
+\begin{centering}
+\includegraphics[scale=0.55]{Imagenes/Q1.png}
+\includegraphics[scale=0.55]{Imagenes/Q2.png}
+\includegraphics[scale=0.55]{Imagenes/Q3.png}
+\includegraphics[scale=0.55]{Imagenes/Q4.png}
+\par\end{centering}
+\caption{Algunas funciones muestra generadas}
+
+\end{figure} 
+
+\newpage 
+
+\subsection{C\'alculo de par\'ametros espec\'ificos}
+
+Teniendo en cuenta el valor te\'orico de $\lambda = 1$ (y que $t_1 < t_2$), se calculan algunos par\'ametros en particular:
+
+\[
+E[Q(t)] = \lambda t \Longrightarrow E[Q(4)] = 4
+\]
+\[
+\sigma^2[Q(t)] = \lambda t \Longrightarrow \sigma^2[Q(7)] = 7
+\]
+\[
+R_{QQ}(t_1,t_2) = \lambda^2t_1t_2 + \lambda t_1 \Longrightarrow R_{QQ}(5,8) = 45
+\]
+\[
+C_{QQ}(t_1,t_2) = R_{QQ}(t_1,t_2) - E[Q(t_1)] \cdot E[Q(t_2)] \Longrightarrow r_{QQ}(t_1,t_2) = \frac{C_{QQ}(t_1,t_2)}{\sqrt{C_{QQ}(t_1,t_1) \cdot C_{QQ}(t_2,t_2)}} \Longrightarrow r_{QQ}(2,3) = 0.8165
+\]
+
+Se comparan los valores te\'oricos con los simulados durante una corrida en el siguiente cuadro.
+
+\begin{table}[ht]
+\begin{centering}
+\begin{tabular}{|c||c|c|}
+\hline 
+ & Te\'orico & Simulado\\
+\hline 
+\hline 
+$E[Q(4)]$ & 4 & 4.0520\\
+\hline 
+$\sigma^2[Q(7)]$ & 7 & 6.8203\\
+\hline 
+$R_{QQ}(5,8)$ & 45 & 45.6080\\
+\hline 
+$r_{QQ}(2,3)$ & 0.8165 & 0.8024\\
+\hline 
+\end{tabular}
+\par\end{centering}
+\caption{Comparaci\'on de los par\'ametros obtenidos}
+
+\end{table}
+
+El c\'odigo utilizado para simular dichos valores se muestra a continuaci\'on. Se utilizaron para ello 1000 funciones muestra (N) de 10000 valores cada una (T), donde en cada caso el valor de $t$ corresponde a $t \cdot N$.
+
+\lstinputlisting[language=Matlab, caption=C\'odigo de implementaci\'on]{Codigos/EJ3B.m}
+
+\newpage
+
+\subsection{Estimaci\'on de par\'ametros por promedio temporal}
+
+Para ver si es posible estimar los par\'ametros anteriores realizando un promedio temporal sobre alguna de las funciones muestra (en lugar de hacerlo sobre el ensamble),se debe verificar que se cumplan ciertos requerimientos. Se considera el promedio temporal en tiempo continuo:
+
+\[
+<g[x(t)]>_T = \frac{1}{T} \int^{\frac{T}{2}}_{-\frac{T}{2}} g[x(t)] \; dt
+\]
+
+Para estimar la media con promedio temporal, debe resultar ser un proceso erg\'odico en la media. Para ello, debe cumplirse que:
+
+\[
+\underset{T \rightarrow \infty}{lim} E[<x(t)>_T] = \mu_x \hspace{2cm} \underset{T \rightarrow \infty}{lim} \sigma^2[<x(t)>_T] = 0
+\]
+
+Intuitivamente, se puede observar que no resultar\'a erg\'odico en la media sin realizar los c\'alculos, dado que si se toma una funci\'on $Q(t)$ cualquiera del ensamble, si $T \rightarrow \infty$ en el peor caso resulta que $Q(t) \rightarrow \infty$, dado que es mon\'otona creciente, por lo que el promedio tendre\'a a $\infty$. Se considera en este caso la integral desde 0 hasta T, dado que no hay tiempo negativo. Verificando la primera condici\'on:
+
+\[
+\underset{T \rightarrow \infty}{lim} \frac{1}{T} \int^{T}_{0} E[Q(t)] \; dt = \underset{T \rightarrow \infty}{lim} \frac{1}{T} \int^{T}_{0} \lambda t \; dt = \underset{T \rightarrow \infty}{lim} \frac{1}{T} \cdot \lambda \cdot \frac{T^2}{2} = \infty
+\]
+
+Por lo tanto, no puede estimarse la media mediante promedio temporal sobre una $Q(t)$ cualquiera del esnsamble.\par
+Para estimar la autocorrelaci\'on con promedio temporal, debe resultar un proceso erg\'odico en la autocorrelaci\'on. Para esto debe verificarse que:
+
+\[
+\underset{T \rightarrow \infty}{lim} E[<R_{xx}(t)>_T] = R_{xx}(t) \hspace{2cm} \underset{T \rightarrow \infty}{lim} \sigma^2[<R_{xx}(t)>_T] = \frac{1}{T} \int^{T}_{-T} \left( 1-\frac{|\tau|}{T} \right) C_{zz}(\tau) \; d\tau
+\]
+\par
+Donde:
+
+\[
+z(t) = x(t) \cdot x(t+\tau) 
+\]
+
+Analizando la primera condici\'on:
+
+\[
+\underset{T \rightarrow \infty}{lim} E[<R_{xx}(t)>_T] = \underset{T \rightarrow \infty}{lim} \frac{1}{T} \int^{T}_{0} E[Q(t) \cdot Q(t+\tau)] \; dt = \underset{T \rightarrow \infty}{lim} \frac{1}{T} \int^{T}_{0} [\lambda^2 t^2 + \lambda t (1+\lambda \tau)] \; dt = \underset{T \rightarrow \infty}{lim} \frac{1}{T} \cdot \lambda^2 \frac{T^3}{3} + \lambda \frac{T^2}{2}(1+\lambda \tau) = \infty
+\]
+
+Por lo tanto, no puede estimarse la autocorrelaci\'on mediante un promedio temporal sobre una $Q(t)$ cualquiera del ensamble. En conclusi\'on, no puede estimarse ninguno de los par\'ametros anteriores mediante promedio temporal sobre una funci\'on muestra.
 \end{document}

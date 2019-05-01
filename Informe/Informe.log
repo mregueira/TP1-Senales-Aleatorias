@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2018.4.3)  30 APR 2019 21:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2018.4.3)  1 MAY 2019 12:41
 entering extended mode
 **./Informe.tex
 (Informe.tex
@@ -1103,16 +1103,58 @@ File: Imagenes/Zb.png Graphic file (type png)
 Package pdftex.def Info: Imagenes/Zb.png used on input line 239.
 (pdftex.def)             Requested size: 231.86696pt x 173.9002pt.
 
-[8 <./Imagenes/Za.png (PNG copy)> <./Imagenes/Zb.png (PNG copy)>] [9]
-(Informe.aux
+[8 <./Imagenes/Za.png (PNG copy)> <./Imagenes/Zb.png (PNG copy)>]
+(Codigos/EJ3A.m) <Imagenes/Q1.png, id=40, 421.575pt x 316.18124pt>
+File: Imagenes/Q1.png Graphic file (type png)
+
+<use Imagenes/Q1.png>
+Package pdftex.def Info: Imagenes/Q1.png used on input line 265.
+(pdftex.def)             Requested size: 231.86696pt x 173.9002pt.
+ <Imagenes/Q2.png, id=41, 421.575pt x 316.18124pt>
+File: Imagenes/Q2.png Graphic file (type png)
+
+<use Imagenes/Q2.png>
+Package pdftex.def Info: Imagenes/Q2.png used on input line 266.
+(pdftex.def)             Requested size: 231.86696pt x 173.9002pt.
+ <Imagenes/Q3.png, id=42, 421.575pt x 316.18124pt>
+File: Imagenes/Q3.png Graphic file (type png)
+
+<use Imagenes/Q3.png>
+Package pdftex.def Info: Imagenes/Q3.png used on input line 267.
+(pdftex.def)             Requested size: 231.86696pt x 173.9002pt.
+ <Imagenes/Q4.png, id=43, 421.575pt x 316.18124pt>
+File: Imagenes/Q4.png Graphic file (type png)
+
+<use Imagenes/Q4.png>
+Package pdftex.def Info: Imagenes/Q4.png used on input line 268.
+(pdftex.def)             Requested size: 231.86696pt x 173.9002pt.
+ [9 <./Imagenes/Q1.png (PNG copy)> <./Imagenes/Q2.png (PNG copy)> <./Imagenes/Q
+3.png (PNG copy)> <./Imagenes/Q4.png (PNG copy)>]
+(Codigos/EJ3B.m) [10]
+Overfull \hbox (11.48555pt too wide) detected at line 359
+[]\FML/futmi/m/it/10 E\T1/futs/m/n/10 [\FMS/futm/m/n/10 ‚ \FML/futmi/m/it/10 R[
+]\T1/futs/m/n/10 (\FML/futmi/m/it/10 t\T1/futs/m/n/10 ) \FMS/futm/m/n/10 ƒ[]\T1
+/futs/m/n/10 ] \FMS/futm/m/n/10  [][] [][] \FML/futmi/m/it/10 E\T1/futs/m/n/10
+ [\FML/futmi/m/it/10 Q\T1/futs/m/n/10 (\FML/futmi/m/it/10 t\T1/futs/m/n/10 ) \F
+MS/futm/m/n/10  \FML/futmi/m/it/10 Q\T1/futs/m/n/10 (\FML/futmi/m/it/10 t \FMS
+/futm/m/n/10 € \FML/futmi/m/it/10 \T1/futs/m/n/10 )] \FML/futmi/m/it/10 dt \FM
+S/futm/m/n/10  [][] [][]\T1/futs/m/n/10 [\FML/futmi/m/it/10 []t[] \FMS/futm/m
+/n/10 € \FML/futmi/m/it/10 t\T1/futs/m/n/10 (1 \FMS/futm/m/n/10 € \FML/futmi/m
+/it/10 \T1/futs/m/n/10 )] \FML/futmi/m/it/10 dt \FMS/futm/m/n/10  [][]  \FM
+L/futmi/m/it/10 [][] \FMS/futm/m/n/10 € \FML/futmi/m/it/10 []\T1/futs/m/n/10 
+(1 \FMS/futm/m/n/10 € \FML/futmi/m/it/10 \T1/futs/m/n/10 ) \FMS/futm/m/n/10 
+ 1
+ []
+
+[11] (Informe.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 7517 strings out of 493333
- 97794 string characters out of 3136603
+ 7557 strings out of 493333
+ 98309 string characters out of 3136603
  317943 words of memory out of 3000000
- 10831 multiletter control sequences out of 15000+200000
+ 10861 multiletter control sequences out of 15000+200000
  97199 words of font info for 128 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,12n,43p,601b,2301s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1124,9 +1166,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Program Files
 (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x86)/Mi
 KTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on Informe.pdf (9 pages, 1395390 bytes).
+Output written on Informe.pdf (11 pages, 1697281 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
+ 77 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
