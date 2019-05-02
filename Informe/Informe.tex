@@ -104,7 +104,7 @@ De los vectores anteriores se estima la media y la varianza para cada caso, comp
 
 \end{table}
 
-Dado que el n\'umero de elementos es bastante grande en los casos analizados, los valores estimados caen siempre muy cerca de los te\'oricos.
+Dado que el n\'umero de elementos es bastante grande en los casos analizados, los valores estimados caen siempre muy cerca de los te\'oricos. A mayor cantidad de elementos la diferencia entre el valor te\'orico y el estimado tiende a ser menor.
 
 \subsection{Estimaciones de $\mu_x$ - Histograma}
 
@@ -130,7 +130,7 @@ Si llamamos a la media estimada $m_X$, se la define en este caso como:
 m_X = \frac{1}{N} \cdot \sum^N_{i=1} \mu_{X_i} \hspace{2cm} \textrm{Con N = 10000} 
 \]
 
-Como la distribuci\'on normal es reproductiva, la suma de N variables aleatorias con dicha distribuci\'on resulta tambi'en normal. Esto \'ultimo tambi\'en puede verse desde el Teorema Central del L\'imite, dado que el valor de N utilizado es suficientemente grande. Para el caso en cuesti\'on, los valores te\'oricos de $\mu$ y $\sigma$ son:
+Como la distribuci\'on normal es reproductiva, la suma de N variables aleatorias con dicha distribuci\'on resulta tambi\'en normal. Esto \'ultimo tambi\'en puede verse desde el Teorema Central del L\'imite, dado que el valor de N utilizado es suficientemente grande. Para el caso en cuesti\'on, los valores te\'oricos de $\mu$ y $\sigma$ son:
 
 \[
 E(m_X) = \mu = \frac{1}{N} \cdot \underbrace{\sum^N_{i=1} E(\mu_{X_i})}_{\textrm{Por linealidad}} = \frac{1}{N} \cdot \sum^N_{i=1} \mu_x = \mu_x \Longrightarrow \mu = 3
@@ -156,7 +156,7 @@ Si se trabaja con la expresi\'on:
 2 \cdot P[m_X - \mu_x < -0.04\mu_x] \leq 0.02
 \]
 \[
-P[\left( \frac{m_X - \mu_x}{\sigma_x} \right) \cdot \sqrt{N} < -0.04 \cdot \frac{\mu_x}{\sigma_x} \cdot \sqrt{N}] \leq 0.01
+P\left[\left( \frac{m_X - \mu_x}{\sigma_x} \right) \cdot \sqrt{N} < -0.04 \cdot \frac{\mu_x}{\sigma_x} \cdot \sqrt{N}\right] \leq 0.01
 \]
 
 La variable aleatoria $\left( \dfrac{m_X - \mu_x}{\sigma_x} \right) \cdot \sqrt{N}$ tiene distribuci\'on normal est\'andar. La llamamos $\Phi$:
@@ -339,7 +339,7 @@ Intuitivamente, se puede observar que no resultar\'a erg\'odico en la media sin 
 \underset{T \rightarrow \infty}{lim} \frac{1}{T} \int^{T}_{0} E[Q(t)] \; dt = \underset{T \rightarrow \infty}{lim} \frac{1}{T} \int^{T}_{0} \lambda t \; dt = \underset{T \rightarrow \infty}{lim} \frac{1}{T} \cdot \lambda \cdot \frac{T^2}{2} = \infty
 \]
 
-Por lo tanto, no puede estimarse la media mediante promedio temporal sobre una $Q(t)$ cualquiera del esnsamble.\par
+Por lo tanto, no puede estimarse la media mediante promedio temporal sobre una $Q(t)$ cualquiera del ensamble.\par
 Para estimar la autocorrelaci\'on con promedio temporal, debe resultar un proceso erg\'odico en la autocorrelaci\'on. Para esto debe verificarse que:
 
 \[
@@ -352,6 +352,6 @@ Donde:
 z(t) = x(t) \cdot x(t+\tau) 
 \]
 
-En la expresi\'on de $R_{QQ}(t_1,t_2)$ hallada anteriormente, se observa que depende de los tiempos en cuesti\'on y no de la diferencia, por lo que el proceso no resulta erg\'odico en la autocorrelaci\'on. En consecuencia, no podr\'a estimarse tampoco mediante el promedio temporal de una funci\'on de muestra $Q(t)$.
+En la expresi\'on de $R_{QQ}(t_1,t_2)$ hallada anteriormente, se observa que depende de los tiempos en cuesti\'on y no de la diferencia, por lo que el proceso no resulta erg\'odico en la autocorrelaci\'on. En consecuencia, no podr\'a estimarse tampoco mediante el promedio temporal de una funci\'on de muestra $Q(t)$ cualquiera del ensamble.
 
 \end{document}
