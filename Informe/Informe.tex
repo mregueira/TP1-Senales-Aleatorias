@@ -352,11 +352,6 @@ Donde:
 z(t) = x(t) \cdot x(t+\tau) 
 \]
 
-Analizando la primera condici\'on:
+En la expresi\'on de $R_{QQ}(t_1,t_2)$ hallada anteriormente, se observa que depende de los tiempos en cuesti\'on y no de la diferencia, por lo que el proceso no resulta erg\'odico en la autocorrelaci\'on. En consecuencia, no podr\'a estimarse tampoco mediante el promedio temporal de una funci\'on de muestra $Q(t)$.
 
-\[
-\underset{T \rightarrow \infty}{lim} E[<R_{xx}(t)>_T] = \underset{T \rightarrow \infty}{lim} \frac{1}{T} \int^{T}_{0} E[Q(t) \cdot Q(t+\tau)] \; dt = \underset{T \rightarrow \infty}{lim} \frac{1}{T} \int^{T}_{0} [\lambda^2 t^2 + \lambda t (1+\lambda \tau)] \; dt = \underset{T \rightarrow \infty}{lim} \frac{1}{T} \cdot \lambda^2 \frac{T^3}{3} + \lambda \frac{T^2}{2}(1+\lambda \tau) = \infty
-\]
-
-Por lo tanto, no puede estimarse la autocorrelaci\'on mediante un promedio temporal sobre una $Q(t)$ cualquiera del ensamble. En conclusi\'on, no puede estimarse ninguno de los par\'ametros anteriores mediante promedio temporal sobre una funci\'on muestra.
 \end{document}
