@@ -144,13 +144,13 @@ De donde se observa que los valores estimados sobre la media del vector graficad
 
 \subsection{Error en la estimaci\'on de $\mu_x$ - Ejemplo}
 
-Se toma ahora un caso particular, donde la cantidad de elementos es desconocida, y se busca que la probabilidad de que el valor estimado $m_X$ se aparte m\'as del 4\% del valor te\'orico sea menor al 2\%. Es decir:
+Se toma ahora un caso particular, donde la cantidad de elementos (vectores con $K$ n\'umeros aleatorios con distribuci\'on normal) es desconocida, y se busca que la probabilidad de que el valor estimado $m_X$ se aparte m\'as del 4\% del valor te\'orico sea menor al 2\%. Es decir:
 
 \[
 P[|m_X - \mu_x| > 0.04\mu_x] \leq 0.02
 \]
 
-Si se trabaja con la expresi\'on:
+Se utiliza un $K$ lo suficientemente grande para considerar que los vectores $X$ tienen media $\mu_x$ y desv\'io est\'andar $\sigma_x$ iguales a los te\'oricos con los que se generaron los n\'umeros aleatorios que \'estos contienen. Si se trabaja con la expresi\'on:
 
 \[
 2 \cdot P[m_X - \mu_x < -0.04\mu_x] \leq 0.02

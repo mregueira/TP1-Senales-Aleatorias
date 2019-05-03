@@ -84,7 +84,8 @@ for i=1:10000
     x1d = rand(10000,1);
     x2d = rand(10000,1);
     xd = a.*(sqrt(-2.*log(x1d)).*cos(2.*pi.*x2d)) + b;
-    mu_x_dist(i) = mean(xd);
+    mu_x_dist(i) = mean(xd)
+    std(xd)
 end
 figure;
 mean(mu_x_dist);
