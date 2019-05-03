@@ -14,10 +14,10 @@ Partiendo de dos variables aleatorias $R$ y $\Theta$, la función de distribuci�
 F_R(r) = 1 - e^{-\frac{r^2}{2}} \hspace{2cm} 0<r<\infty
 \]
 
-Igualalndo a $U_1$ se puede despejar:
+Igualalndo a $u_1$ se puede despejar:
 
 \[
-F_R(r) = U_1 \Longrightarrow R = \sqrt{-2 \cdot \textrm{ln}(U_1)}
+F_R(r) = u_1 \Longrightarrow R = \sqrt{-2 \cdot \textrm{ln}(u_1)}
 \]
 
 La variable $\Theta$ tiene distribución uniforme:
@@ -26,16 +26,16 @@ La variable $\Theta$ tiene distribución uniforme:
 F_{\Theta}(\theta) = \frac{\theta}{2\pi} \hspace{2cm} 0<\theta<2\pi
 \] 
 
-Igualando a $U_2$ se despeja:
+Igualando a $u_2$ se despeja:
 
 \[
-F_{\Theta}(\theta) = U_2 \Longrightarrow \Theta = 2 \pi U_2
+F_{\Theta}(\theta) = u_2 \Longrightarrow \Theta = 2 \pi u_2
 \]
 
 Se tiene entonces que:
 
 \[
-Y = R \cdot \textrm{cos}(\Theta) \Longrightarrow Y = \sqrt{-2 \cdot \textrm{ln}(U_1)} \cdot \textrm{cos}(2 \pi U_2)
+Y = R \cdot \textrm{cos}(\Theta) \Longrightarrow Y = \sqrt{-2 \cdot \textrm{ln}(u_1)} \cdot \textrm{cos}(2 \pi u_2)
 \]
 
 Por lo que se consigue generar una variable aleatoria $Y\sim N(0,1)$. Para obtener la variable aleatoria $X$ con media y varianza personalizadas, se utiliza la transformación lineal:
